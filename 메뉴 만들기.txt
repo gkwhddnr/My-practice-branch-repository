@@ -16,3 +16,6 @@ fillmenu.add_command(label = "종료", command = quit)
 menubar.add_cascade(label = "파일", menu = fillmenu)
 window.config(menu = menubar)
 window.mainloop()
+
+# 메뉴 만들기 프로젝트
+# 메뉴를 만든다.
