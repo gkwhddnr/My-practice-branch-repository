@@ -1,0 +1,65 @@
+my_money = 0 # 투입할 금액 변수
+# 제품 가격 책정 변수
+beverage_cost = 1000
+milk_cost = 500
+banana_cost = 200
+orange_cost = 100
+
+beverage_flag = 0
+milk_flag = 0
+banana_flag = 0
+orange_flag = 0
+
+menu = 0
+end = 200 # 투입한 금액이 200 이하면 종료
+
+my_money = int(input("투입할 금액 입력"))
+print("1. 음료수")
+print("2. 우유")
+print("3. 바나나")
+print("4. 오렌지")
+
+while (my_money >= end):
+    menu = int(input("제품 선택:"))
+    if(menu == 1):
+        if(my_money >= beverage_cost):
+            my_money = my_money - beverage_cost
+            print("음료수를 구매하였습니다.")
+            print("남은 금액 :", my_money)
+            beverage_flag += 1
+        else:
+            print("금액이 부족합니다.")
+    elif(menu == 2):
+        if(my_money >= milk_cost):
+            my_money = my_money - milk_cost
+            print("우유를 구매하였습니다.")
+            print("남은 금액 :", my_money)
+            milk_flag += 1            
+        else:
+            print("금액이 부족합니다.")
+    elif(menu == 3):
+        if(my_money >= banana_cost):
+            my_money = my_money - banana_cost
+            print("바나나를 구매하였습니다.")
+            print("남은 금액 :", my_money)
+            banana_flag += 1
+        else:
+            print("금액이 부족합니다.")
+    elif(menu == 4):
+        if(my_money >= orange_cost):
+            my_money = my_money - orange_cost
+            print("음료수를 구매하였습니다.")
+            print("남은 금액 :", my_money)
+            orange_flag += 1
+        else:
+            print("금액이 부족합니다.")
+
+# print("내가 총 구입한 제품 개수: 음료수:", beverage_flag, "우유:", milk_flag, "바나나:", banana_flag, "오렌지:", orange_flag)
+if(beverage_flag > 0):
+    print("음료수", beverage_flag, "개")
+if(milk_flag > 0):
+    print("우유", milk_flag, "개")
+if(banana_flag > 0):
+    print("바나나", banana_flag, "개")
+if(orange_flag > 0):
+    print("오렌지", orange_flag, "개")
