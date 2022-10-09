@@ -10,6 +10,8 @@ milk_flag  = 0
 banana_flag = 0
 orange_flag = 0
 
+end = 10000
+cost = map(int, input().split())
 
 my_money = int(input("투입할 금액 입력"))
 print("1. 음료수")
