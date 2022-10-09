@@ -5,13 +5,11 @@ milk_cost = 500
 banana_cost = 200
 orange_cost = 100
 
-beverage_flag = 0
-milk_flag = 0
+beverage_flag  = 0
+milk_flag  = 0
 banana_flag = 0
 orange_flag = 0
 
-menu = 0
-end = 200 # 투입한 금액이 200 이하면 종료
 
 my_money = int(input("투입할 금액 입력"))
 print("1. 음료수")
