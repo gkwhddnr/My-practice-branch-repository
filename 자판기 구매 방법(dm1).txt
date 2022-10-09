@@ -1,18 +1,3 @@
-my_money = 0 # 투입할 금액 변수
-# 제품 가격 책정 변수
-beverage_cost = 1000
-milk_cost = 500
-banana_cost = 200
-orange_cost = 100
-
-beverage_flag  = 0
-milk_flag  = 0
-banana_flag = 0
-orange_flag = 0
-
-end = 10000
-cost = map(int, input().split())
-
 my_money = int(input("투입할 금액 입력"))
 print("1. 음료수")
 print("2. 우유")
